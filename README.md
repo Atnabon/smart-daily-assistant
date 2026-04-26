@@ -18,7 +18,7 @@ Both surfaces share one agent module (`lib/agent.ts`) that calls an LLM through 
 | Web chatbot | https://smart-daily-assistant-one.vercel.app |
 | Telegram bot | [@smartbonney_bot](https://t.me/smartbonney_bot) |
 | GitHub repo | https://github.com/Atnabon/smart-daily-assistant |
-| Demo video (Loom) | `https://www.loom.com/share/<id>` |
+| Demo video (Loom) | `https://www.loom.com/share/4ad102884ca046869cf6f1c7345d6921` |
 
 ---
 
