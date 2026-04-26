@@ -11,8 +11,6 @@
  *   npm run telegram:set-webhook -- https://your-app.vercel.app
  */
 
-export {};
-
 const url = process.argv[2] ?? process.env.APP_URL;
 const token = process.env.TELEGRAM_BOT_TOKEN;
 const secret = process.env.TELEGRAM_WEBHOOK_SECRET;
@@ -35,14 +33,16 @@ const body: Record<string, unknown> = {
 };
 if (secret) body.secret_token = secret;
 
-const res = await fetch(`https://api.telegram.org/bot${token}/setWebhook`, {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify(body),
-});
+void (async () => {
+  const res = await fetch(`https://api.telegram.org/bot${token}/setWebhook`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
 
-const json = await res.json();
-console.log(JSON.stringify(json, null, 2));
-if (!json.ok) process.exit(1);
+  const json = await res.json();
+  console.log(JSON.stringify(json, null, 2));
+  if (!json.ok) process.exit(1);
 
-console.log(`\nWebhook registered: ${webhookUrl}`);
+  console.log(`\nWebhook registered: ${webhookUrl}`);
+})();

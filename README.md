@@ -15,12 +15,12 @@ Both surfaces share one agent module (`lib/agent.ts`) that calls an LLM through 
 
 | Surface | Link |
 | --- | --- |
-| Web chatbot | `https://<your-app>.vercel.app` |
-| Telegram bot | `@<your-bot>_bot` |
-| GitHub repo | `https://github.com/<you>/smart-daily-assistant` |
+| Web chatbot | https://smart-daily-assistant-one.vercel.app |
+| Telegram bot | [@smartbonney_bot](https://t.me/smartbonney_bot) |
+| GitHub repo | https://github.com/Atnabon/smart-daily-assistant |
 | Demo video (Loom) | `https://www.loom.com/share/<id>` |
 
-Replace these placeholders after you deploy. The video script lives in `DEMO_VIDEO_SCRIPT.md`.
+The video script lives in `DEMO_VIDEO_SCRIPT.md`.
 
 ---
 
@@ -122,7 +122,7 @@ smart-daily-assistant/
 ### 1. Install
 
 ```bash
-git clone https://github.com/<you>/smart-daily-assistant.git
+git clone https://github.com/Atnabon/smart-daily-assistant.git
 cd smart-daily-assistant
 pnpm install   # or npm install
 ```
@@ -191,7 +191,7 @@ pnpm telegram:delete-webhook
 4. **Deploy.** Vercel will give you `https://<project>.vercel.app`.
 5. **Register the Telegram webhook** against your prod URL:
    ```bash
-   APP_URL=https://<project>.vercel.app \
+   APP_URL=https://smart-daily-assistant-one.vercel.app \
    TELEGRAM_BOT_TOKEN=... \
    TELEGRAM_WEBHOOK_SECRET=... \
    npm run telegram:set-webhook
