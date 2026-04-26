@@ -20,8 +20,6 @@ Both surfaces share one agent module (`lib/agent.ts`) that calls an LLM through 
 | GitHub repo | https://github.com/Atnabon/smart-daily-assistant |
 | Demo video (Loom) | `https://www.loom.com/share/<id>` |
 
-The video script lives in `DEMO_VIDEO_SCRIPT.md`.
-
 ---
 
 ## What "agentic" means here
@@ -107,7 +105,6 @@ smart-daily-assistant/
 │   └── delete-telegram-webhook.ts
 ├── .env.example                    # Template — safe to commit
 ├── .gitignore                      # .env* are ignored
-├── DEMO_VIDEO_SCRIPT.md            # 5-min Loom outline
 ├── next.config.ts
 ├── package.json
 ├── postcss.config.mjs              # Tailwind 4 (CSS-first config)
