@@ -7,8 +7,6 @@ An agentic AI assistant that turns a user's request into a small, **prioritized 
 
 Both surfaces share one agent module (`lib/agent.ts`) that calls an LLM through **OpenRouter** (defaulting to Google Gemini 2.0 Flash, swappable to Claude / GPT / Llama via one env var). Channel adapters (`app/api/chat`, `app/api/telegram`) only handle transport — they don't reimplement the agent.
 
-> Built for the EL LLC AI assessment. Goal: ship a working MVP that demonstrates clear architecture, secret hygiene, and useful agentic behavior.
-
 ---
 
 ## Live demo
